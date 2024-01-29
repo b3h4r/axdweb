@@ -1,0 +1,112 @@
+#Footer 
+{
+    margin-top: 100px;
+    background-color: #371967;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 45px 0px;
+    gap: 40px;
+    width: 100%;
+
+    .form 
+    {
+        background-color: white;
+        padding: 3px 3.2px 3px 10px;
+        border-radius: 50px;
+        display: flex;
+        gap: 10px;
+
+        input 
+        {
+            background-color: transparent;
+            font-family: League Spartan;
+            color: black;
+            font-weight: 310;
+            border: none;
+            outline: none;
+            width: 180px;
+            
+            &::placeholder
+            {
+                color: black;
+            }
+        }
+
+        button 
+        {
+            background-color: #371968;
+            border: none;
+            outline: none;
+            font-family: League Spartan;
+            color: white;
+            font-weight: 310;
+            padding: 8px 8px;
+            border-radius: 50px;
+
+            &:hover
+            {
+                background-color: transparent;
+                border: 1px solid #371968;
+                color: #371968;
+            }
+        }
+    }
+
+    nav 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        
+        a 
+        {
+            color: white;
+            font-size: 0.9em;
+            font-weight: 300;
+        }
+    }
+
+    .socials 
+    {
+        display: flex;
+        gap: 20px;
+        color: white;
+        font-size: 1.1em;
+
+        a 
+        {
+            color: white;
+        }
+
+        i 
+        {
+            &:hover 
+            {
+                transform: scale(1.075);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {   
+    #Footer 
+    {
+        .form 
+        {
+            input 
+            {
+                width: 80px;
+            
+            }
+
+            button 
+            {
+                font-size: 0.8em;
+            }
+        }
+    }
+}

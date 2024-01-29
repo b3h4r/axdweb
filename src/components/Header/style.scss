@@ -1,0 +1,54 @@
+#Header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    img 
+    {
+        margin-top: -9px;
+    }
+
+    nav 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        a 
+        {
+            font-size: 0.80em;
+            font-weight: 550;
+        }
+    }
+
+    .button 
+    {
+        color: white;
+        background-color: #371968;
+        padding: 8px 18px;
+        font-size: 0.80em;
+        font-weight: 250;
+        border-radius: 50px;
+
+        &:hover 
+        {
+            background-color: transparent;
+            color: #371968;
+            border: 1px solid #371968;
+            font-weight: 300;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #Header
+    {
+        nav 
+        {
+            display: none;
+        }
+    }
+}

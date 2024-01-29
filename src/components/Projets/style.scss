@@ -1,0 +1,156 @@
+#Projets 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+    
+    .title
+    {
+        display: inline-block;
+        background-color: #371968;
+        color: white;
+        font-weight: 250;
+        font-size: 0.85em;
+        padding: 6px 15px;
+        border-radius: 50px;
+    }
+    
+    p
+    {
+        &:nth-child(3)
+        {
+            margin-top: 20px;
+            font-size: 0.80em;
+            font-weight: 280;
+        }
+    }
+
+    h2 
+    {
+        font-weight: 570;
+        font-size: 1.4em;
+        margin-top: 20px;
+    }
+
+    .nothing
+    {
+        margin-top: 70px;
+        font-weight: 600;
+        font-size: 0.85em;
+        font-style: italic;
+    }
+
+    .projects
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        margin-top: 30px;
+
+        .project 
+        {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+
+            img 
+            {
+                width: 100%;
+                height: 250px;
+                border-radius: 10px;
+            }
+
+            p 
+            {
+                margin-top: 10px;
+                display: inline-block;
+                background-color: #D9D9D9;
+                padding: 3px 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 70px;
+                border-radius: 50px;
+                font-size: 0.65em;
+                font-weight: 450;
+                margin-left: 10px;
+            }
+
+            h3 
+            {
+                font-size: 1.1em;
+                font-weight: 650;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            &:hover 
+            {
+                transform: scale(1.025);
+            }
+        }
+    }
+
+    .button 
+    {
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        button 
+        {
+            border: 1px solid #371968;
+            color: #371968;
+            font-family: League Spartan;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 0.8em;
+            background-color: transparent;
+            border-radius: 50px;
+            padding: 4px 10px;
+            font-weight: 450;
+            outline: none;
+
+            &:hover 
+            {
+                color: white;
+                background-color: #371968;
+            }
+
+            i 
+            {
+                font-size: 0.65em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 902px) {
+    #Projets 
+    {
+        h2 
+        {
+            text-align: center;
+        }
+        
+        .projects 
+        {
+            justify-content: center;
+        }
+
+        .button 
+        {
+            margin-top: 50px;
+            justify-content: center;
+        }
+    }
+}
